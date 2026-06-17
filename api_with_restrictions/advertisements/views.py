@@ -17,7 +17,7 @@ class AdvertisementViewSet(ModelViewSet):
 
     def get_permissions(self):
         """
-        Переопределяем права доступа для различных действий (actions).
+        Переопределяем права доступа для различных действий.
         """
         if self.action == "create":
             self.permission_classes = [IsAuthenticated]

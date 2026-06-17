@@ -3,7 +3,7 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 class IsOwner(BasePermission):
     """
-    Разрешение, которое проверяет, является ли пользователь владельцем объекта.
+    Является ли пользователь владельцем объекта.
     """
 
     def has_object_permission(self, request, view, obj):
